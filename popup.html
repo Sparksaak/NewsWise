@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <style>
+      body {
+        width: 350px;
+        min-height: 500px;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+      }
+
+      .container {
+        padding: 20px;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .subtitle {
+        font-size: 12px;
+        opacity: 0.8;
+      }
+
+      .status {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .verdict-container {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .verdict-title {
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        opacity: 0.9;
+      }
+
+      .verdict {
+        font-size: 24px;
+        font-weight: bold;
+        padding: 15px 20px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .verdict.trustworthy {
+        background: #10B981;
+        color: white;
+      }
+
+      .verdict.questionable {
+        background: #F59E0B;
+        color: white;
+      }
+
+      .verdict.fake {
+        background: #EF4444;
+        color: white;
+      }
+
+      .meter-container {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+
+      .meter-title {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+
+      .meter {
+        width: 100%;
+        height: 20px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 10px;
+      }
+
+      .meter-fill {
+        height: 100%;
+        border-radius: 10px;
+        transition: width 0.5s ease;
+      }
+
+      .score {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .summary {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 20px;
+      }
+
+      .summary-title {
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .summary-text {
+        font-size: 12px;
+        line-height: 1.4;
+        opacity: 0.9;
+      }
+
+      .source-item {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+        padding: 8px;
+        margin-bottom: 8px;
+        font-size: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .source-item:last-child {
+        margin-bottom: 0;
+      }
+
+      .source-title {
+        font-weight: 600;
+        flex: 1;
+      }
+
+      .source-similarity {
+        opacity: 0.7;
+        font-size: 10px;
+        margin-left: 8px;
+      }
+
+      .reasoning {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 20px;
+      }
+
+      .reasoning-title {
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+
+      .reasoning-text {
+        font-size: 12px;
+        line-height: 1.4;
+        opacity: 0.9;
+      }
+
+      .analyze-btn {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        color: white;
+        padding: 12px;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .analyze-btn:hover {
+        background: rgba(255, 255, 255, 0.3);
+      }
+
+      .analyze-btn:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+
+      .loading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .spinner {
+        width: 16px;
+        height: 16px;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        border-top: 2px solid white;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .error {
+        background: rgba(255, 0, 0, 0.2);
+        border: 1px solid rgba(255, 0, 0, 0.3);
+        border-radius: 8px;
+        padding: 10px;
+        margin-bottom: 15px;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo">News Wise</div>
+        <div class="subtitle">AI-Powered News Analysis & Summary</div>
+      </div>
+
+      <div id="status" class="status">
+        <div id="statusText">Checking current page...</div>
+      </div>
+
+      <div id="error" class="error" style="display: none;"></div>
+
+      <div id="verdictContainer" class="verdict-container" style="display: none;">
+        <div class="verdict-title">Conclusion</div>
+        <div id="verdict" class="verdict"></div>
+      </div>
+
+      <div id="meterContainer" class="meter-container" style="display: none;">
+        <div class="meter-title">Authenticity Score</div>
+        <div class="meter">
+          <div id="meterFill" class="meter-fill"></div>
+        </div>
+        <div id="score" class="score"></div>
+      </div>
+
+      <div id="summary" class="summary" style="display: none;">
+        <div class="summary-title">
+          Article Summary
+        </div>
+        <div id="summaryText" class="summary-text"></div>
+      </div>
+
+      <div id="reasoning" class="reasoning" style="display: none;">
+        <div class="reasoning-title">Analysis Details</div>
+        <div id="reasoningText" class="reasoning-text"></div>
+      </div>
+
+      <button id="analyzeBtn" class="analyze-btn">
+        <span id="btnText">Analyze & Summarize Article</span>
+        <div id="loading" class="loading" style="display: none;">
+          <div class="spinner"></div>
+          <span>Analyzing...</span>
+        </div>
+      </button>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+
+</html>
