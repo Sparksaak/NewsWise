@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "description": "Detect fake news and verify article authenticity with AI-powered analysis",
   "permissions": ["activeTab", "storage", "scripting"],
-  "host_permissions": ["http://localhost:3000/*", "https://*/*"],
+  "host_permissions": ["http://news-wise.vercel.app/*", "https://*/*"],
   "background": {
     "service_worker": "background.js"
   },
