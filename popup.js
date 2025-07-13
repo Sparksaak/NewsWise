@@ -360,18 +360,18 @@ class NewsWisePopup {
         // First, check if the server is running
         try {
             console.log("Checking server connection...")
-            const healthCheck = await fetch("http://localhost:3000", {
+            const healthCheck = await fetch("http://news-wise.vercel.app", {
                 method: "GET",
                 mode: "cors",
             })
             console.log("Server health check:", healthCheck.status)
         } catch (healthError) {
             console.error("Server health check failed:", healthError)
-            throw new Error("Cannot connect to backend server. Make sure it's running on http://localhost:3000")
+            throw new Error("Cannot connect to backend server. Make sure it's running on http://news-wise.vercel.app")
         }
 
         console.log("Sending analysis request...")
-        const response = await fetch("http://localhost:3000/api/analyze", {
+        const response = await fetch("http://news-wise.vercel.app/api/analyze", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
