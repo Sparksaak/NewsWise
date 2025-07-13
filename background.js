@@ -30,7 +30,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 
 async function handleArticleAnalysis(articleData) {
     try {
-        const response = await fetch("http://localhost:3000/api/analyze", {
+        const response = await fetch("http://news-wise.vercel.app/api/analyze", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
