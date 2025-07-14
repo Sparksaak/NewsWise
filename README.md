@@ -1,22 +1,22 @@
-NewsWise Chrome Extension
+News Wise Chrome Extension
 =========================
 
-NewsWise is a sophisticated Chrome extension designed to empower users with the ability to critically evaluate the credibility of news articles and efficiently digest information. By leveraging advanced analytical techniques, NewsWise provides an authenticity score for news content and offers clear, concise reasoning behind its assessment, alongside a convenient article summarization feature.
+News Wise is a sophisticated Chrome extension designed to empower users with the ability to critically evaluate the credibility of news articles and efficiently digest information. By leveraging advanced analytical techniques, News Wise provides an authenticity score for news content and offers clear, concise reasoning behind its assessment, alongside a convenient article summarization feature.
 
 Table of Contents
 -----------------
 
-*   [Features](https://www.google.com/search?q=#features)
+*   Features
     
-*   [How It Works](https://www.google.com/search?q=#how-it-works)
+*   How It Works
     
-*   [Installation](https://www.google.com/search?q=#installation)
+*   Installation
     
-*   [Usage](https://www.google.com/search?q=#usage)
+*   Usage
     
-*   [Contributing](https://www.google.com/search?q=#contributing)
+*   Contributing
     
-*   [License](https://www.google.com/search?q=#license)
+*   License
     
 
 Features
@@ -34,7 +34,7 @@ Features
 How It Works
 ------------
 
-NewsWise employs a multi-faceted approach to determine article authenticity:
+News Wise employs a multi-faceted approach to determine article authenticity:
 
 1.  **Source Analysis:** Evaluates the reputation and historical accuracy of the news source.
     
@@ -50,11 +50,11 @@ The authenticity score is a composite metric derived from these analyses, provid
 Installation
 ------------
 
-To install the NewsWise Chrome Extension:
+To install the News Wise Chrome Extension:
 
-1.  **Download:** Obtain the latest release of the extension from the [GitHub Releases Page](https://www.google.com/search?q=link-to-release-page) or clone this repository.
+1.  **Download:** Download this repository as a ZIP file.
     
-2.  **Unpack:** If downloaded as a ZIP file, extract the contents to a designated folder.
+2.  **Unpack:** Extract the contents to a designated folder.
     
 3.  **Open Chrome Extensions:**
     
@@ -68,31 +68,25 @@ To install the NewsWise Chrome Extension:
     
 5.  **Load Unpacked:** Click the "Load unpacked" button that appears.
     
-6.  **Select Folder:** Navigate to and select the folder where you extracted/cloned the NewsWise extension files.
+6.  **Select Folder:** Navigate to and select the extracted News Wise extension folder.
     
-7.  **Pin Extension (Optional):** Click the puzzle piece icon next to your profile avatar in the Chrome toolbar and pin the NewsWise icon for easy access.
+7.  **Pin Extension (Optional):** Click the puzzle piece icon next to your profile avatar in the Chrome toolbar and pin the News Wise icon for easy access.
     
 
 Usage
 -----
 
-Once installed, the NewsWise icon will appear in your Chrome toolbar.
+Once installed, the News Wise icon will appear in your Chrome toolbar.
 
 1.  **Navigate to a News Article:** Open any news article in your Chrome browser.
     
-2.  **Activate Extension:** Click the NewsWise extension icon in your toolbar.
-    
-3.  **View Authenticity Score:** A pop-up will display the authenticity score for the current article.
-    
-4.  **Access Reasoning:** Click on the "View Reasoning" or similar button within the pop-up to see a detailed breakdown of how the score was determined.
-    
-5.  **Summarize Article:** Click on the "Summarize Article" button to generate a condensed version of the content.
+2.  **Activate Extension:** Click the News Wise extension icon in the extensions toolbar.
     
 
 Contributing
 ------------
 
-We welcome contributions to the NewsWise project! If you are interested in improving this extension, please follow these steps:
+We welcome contributions to the News Wise project! If you are interested in improving this extension, please follow these steps:
 
 1.  Fork the repository.
     
@@ -110,4 +104,4 @@ Please ensure your code adheres to the existing style guidelines and includes ap
 License
 -------
 
-This project is licensed under the MIT License - see the [LICENSE](https://www.google.com/search?q=LICENSE) file for details.
+This project is licensed under the MIT License - see the LICENSE file for details.
