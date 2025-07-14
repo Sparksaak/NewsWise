@@ -80,7 +80,7 @@ Once installed, the News Wise icon will appear in your Chrome toolbar.
 
 1.  **Navigate to a News Article:** Open any news article in your Chrome browser.
     
-2.  **Activate Extension:** Click the News Wise extension icon in the extensions toolbar.
+2.  **Activate Extension:** Click the News Wise extension icon in the extensions toolbar to activate the extension.
     
 
 Contributing
