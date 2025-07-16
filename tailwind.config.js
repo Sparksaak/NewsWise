@@ -11,7 +11,7 @@ module.exports = {
       colors: {
         "news-wise-blue-start": "#7B8FFC",
         "news-wise-purple-end": "#6A2E9A",
-        "news-wise-card-blue": "#735FCB",
+        "news-wise-card-blue": "#9F91DC",
         "news-wise-accent": "#FF9900",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
