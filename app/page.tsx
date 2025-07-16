@@ -1,27 +1,9 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import {
-  ShieldCheck,
-  Lightbulb,
-  FileText,
-  User,
-  Search,
-  ClipboardCheck,
-  Megaphone,
-  BookOpen,
-  Download,
-  Chrome,
-  FolderOpen,
-  ToggleRight,
-  Pin,
-  MousePointerClick,
-} from "lucide-react"
-
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Link from "next/link"
 
 export default function Home() {
-  return (<div className="min-h-screen bg-gradient-to-br from-news-wise-blue-start to-news-wise-purple-end text-white">
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-news-wise-blue-start to-news-wise-purple-end text-white">
       {/* Hero Section */}
       <section className="py-16 md:py-24 lg:py-32 text-center px-4">
         <div className="container mx-auto max-w-3xl space-y-6">
@@ -34,9 +16,25 @@ export default function Home() {
             reasoning behind its assessment, alongside a convenient article summarization feature.
           </p>
           <Link href="https://github.com/Sparksaak/NewsWise/archive/refs/heads/main.zip" download>
-            <Button className="mt-8 px-8 py-3 text-lg bg-news-wise-accent hover:bg-news-wise-accent/90 text-white rounded-full shadow-lg transition-transform transform hover:scale-105">
-              <Download className="mr-2 h-5 w-5" /> Download Extension
-            </Button>
+            <button className="mt-8 px-8 py-3 text-lg bg-news-wise-accent hover:bg-news-wise-accent/90 text-white rounded-full shadow-lg transition-transform transform hover:scale-105 inline-flex items-center justify-center font-medium">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="mr-2 h-5 w-5"
+              >
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" x2="12" y1="15" y2="3" />
+              </svg>{" "}
+              Download Extension
+            </button>
           </Link>
         </div>
       </section>
@@ -46,53 +44,113 @@ export default function Home() {
         <div className="container mx-auto">
           <h2 className="text-3xl md:text-5xl font-bold text-center mb-12 text-news-wise-accent">Features</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <Card className="bg-news-wise-card-blue text-white border-none rounded-xl shadow-lg p-6 flex flex-col items-center">
-              <CardHeader className="pb-4">
-                <ShieldCheck className="h-12 w-12 text-news-wise-accent mb-4" />
-                <CardTitle className="text-xl font-semibold text-news-wise-accent">Authenticity Scoring</CardTitle>
-              </CardHeader>
-              <CardContent>
+            <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6 flex flex-col items-center">
+              <div className="pb-4 text-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="h-12 w-12 text-news-wise-accent mb-4 mx-auto"
+                >
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  <path d="m9 12 2 2 4-4" />
+                </svg>
+                <h3 className="text-xl font-semibold text-news-wise-accent">Authenticity Scoring</h3>
+              </div>
+              <div className="text-center">
                 <p className="text-white">
                   Get an immediate credibility score for any news article you are viewing, helping you quickly gauge its
                   trustworthiness.
                 </p>
-              </CardContent>
-            </Card>
-            <Card className="bg-news-wise-card-blue text-white border-none rounded-xl shadow-lg p-6 flex flex-col items-center">
-              <CardHeader className="pb-4">
-                <Lightbulb className="h-12 w-12 text-news-wise-accent mb-4" />
-                <CardTitle className="text-xl font-semibold text-news-wise-accent">Reasoning Transparency</CardTitle>
-              </CardHeader>
-              <CardContent>
+              </div>
+            </div>
+            <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6 flex flex-col items-center">
+              <div className="pb-4 text-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="h-12 w-12 text-news-wise-accent mb-4 mx-auto"
+                >
+                  <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1.3.5 2.5 1.5 3.5.8.7 1.3 1.5 1.5 2.5" />
+                  <path d="M9 18h6" />
+                  <path d="M10 22h4" />
+                </svg>
+                <h3 className="text-xl font-semibold text-news-wise-accent">Reasoning Transparency</h3>
+              </div>
+              <div className="text-center">
                 <p className="text-white">
                   Understand the factors that contribute to an article&apos;s authenticity score, including source
                   reputation, factual consistency, bias indicators, and more.
                 </p>
-              </CardContent>
-            </Card>
-            <Card className="bg-news-wise-card-blue text-white border-none rounded-xl shadow-lg p-6 flex flex-col items-center">
-              <CardHeader className="pb-4">
-                <FileText className="h-12 w-12 text-news-wise-accent mb-4" />
-                <CardTitle className="text-xl font-semibold text-news-wise-accent">Article Summarization</CardTitle>
-              </CardHeader>
-              <CardContent>
+              </div>
+            </div>
+            <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6 flex flex-col items-center">
+              <div className="pb-4 text-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="h-12 w-12 text-news-wise-accent mb-4 mx-auto"
+                >
+                  <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
+                  <polyline points="14 2 14 8 20 8" />
+                  <line x1="16" x2="8" y1="13" y2="13" />
+                  <line x1="16" x2="8" y1="17" y2="17" />
+                  <line x1="10" x2="8" y1="9" y2="9" />
+                </svg>
+                <h3 className="text-xl font-semibold text-news-wise-accent">Article Summarization</h3>
+              </div>
+              <div className="text-center">
                 <p className="text-white">
                   Generate concise summaries of lengthy news articles, allowing you to grasp key information without
                   reading the full text.
                 </p>
-              </CardContent>
-            </Card>
-            <Card className="bg-news-wise-card-blue text-white border-none rounded-xl shadow-lg p-6 flex flex-col items-center">
-              <CardHeader className="pb-4">
-                <User className="h-12 w-12 text-news-wise-accent mb-4" />
-                <CardTitle className="text-xl font-semibold text-news-wise-accent">User-Friendly Interface</CardTitle>
-              </CardHeader>
-              <CardContent>
+              </div>
+            </div>
+            <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6 flex flex-col items-center">
+              <div className="pb-4 text-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="h-12 w-12 text-news-wise-accent mb-4 mx-auto"
+                >
+                  <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
+                </svg>
+                <h3 className="text-xl font-semibold text-news-wise-accent">User-Friendly Interface</h3>
+              </div>
+              <div className="text-center">
                 <p className="text-white">
                   Seamlessly integrated into your browsing experience with an intuitive and professional design.
                 </p>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -105,48 +163,112 @@ export default function Home() {
             News Wise employs a multi-faceted approach to determine article authenticity:
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <Card className="bg-news-wise-card-blue text-white border-none rounded-xl shadow-lg p-6">
-              <CardHeader className="pb-4">
-                <Search className="h-10 w-10 text-news-wise-accent mb-3" />
-                <CardTitle className="text-xl font-semibold text-news-wise-accent">Source Analysis</CardTitle>
-              </CardHeader>
-              <CardContent>
+            <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6">
+              <div className="pb-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="h-10 w-10 text-news-wise-accent mb-3"
+                >
+                  <circle cx="11" cy="11" r="8" />
+                  <path d="m21 21-4.3-4.3" />
+                </svg>
+                <h3 className="text-xl font-semibold text-news-wise-accent">Source Analysis</h3>
+              </div>
+              <div>
                 <p className="text-white">Evaluates the reputation and historical accuracy of the news source.</p>
-              </CardContent>
-            </Card>
-            <Card className="bg-news-wise-card-blue text-white border-none rounded-xl shadow-lg p-6">
-              <CardHeader className="pb-4">
-                <ClipboardCheck className="h-10 w-10 text-news-wise-accent mb-3" />
-                <CardTitle className="text-xl font-semibold text-news-wise-accent">Content Analysis</CardTitle>
-              </CardHeader>
-              <CardContent>
+              </div>
+            </div>
+            <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6">
+              <div className="pb-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="h-10 w-10 text-news-wise-accent mb-3"
+                >
+                  <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+                  <path d="M9 3v18" />
+                  <path d="M15 3v18" />
+                  <path d="M3 9h18" />
+                  <path d="M3 15h18" />
+                </svg>
+                <h3 className="text-xl font-semibold text-news-wise-accent">Content Analysis</h3>
+              </div>
+              <div>
                 <p className="text-white">
                   Examines the article for common indicators of misinformation, such as sensational language, logical
                   fallacies, and unsupported claims.
                 </p>
-              </CardContent>
-            </Card>
-            <Card className="bg-news-wise-card-blue text-white border-none rounded-xl shadow-lg p-6">
-              <CardHeader className="pb-4">
-                <Megaphone className="h-10 w-10 text-news-wise-accent mb-3" />
-                <CardTitle className="text-xl font-semibold text-news-wise-accent">Cross-Referencing</CardTitle>
-              </CardHeader>
-              <CardContent>
+              </div>
+            </div>
+            <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6">
+              <div className="pb-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="h-10 w-10 text-news-wise-accent mb-3"
+                >
+                  <path d="M12 12c-2.8 0-5 2.2-5 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5Z" />
+                  <path d="M18 12h.01" />
+                  <path d="M6 12h.01" />
+                  <path d="M12 6v.01" />
+                  <path d="M12 18v.01" />
+                  <path d="M12 2v.01" />
+                  <path d="M22 12h.01" />
+                  <path d="M2 12h.01" />
+                </svg>
+                <h3 className="text-xl font-semibold text-news-wise-accent">Cross-Referencing</h3>
+              </div>
+              <div>
                 <p className="text-white">
                   Compares information presented in the article with other reputable sources to identify discrepancies
                   or corroborating evidence.
                 </p>
-              </CardContent>
-            </Card>
-            <Card className="bg-news-wise-card-blue text-white border-none rounded-xl shadow-lg p-6">
-              <CardHeader className="pb-4">
-                <BookOpen className="h-10 w-10 text-news-wise-accent mb-3" />
-                <CardTitle className="text-xl font-semibold text-news-wise-accent">Bias Detection</CardTitle>
-              </CardHeader>
-              <CardContent>
+              </div>
+            </div>
+            <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6">
+              <div className="pb-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="h-10 w-10 text-news-wise-accent mb-3"
+                >
+                  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z" />
+                </svg>
+                <h3 className="text-xl font-semibold text-news-wise-accent">Bias Detection</h3>
+              </div>
+              <div>
                 <p className="text-white">Identifies potential ideological or political biases within the content.</p>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           </div>
           <p className="text-lg md:text-xl text-white text-center mt-12 leading-relaxed">
             The authenticity score is a composite metric derived from these analyses, providing a comprehensive overview
@@ -165,28 +287,58 @@ export default function Home() {
           </p>
           <ol className="space-y-8 text-lg text-white">
             <li>
-              <Card className="bg-news-wise-card-blue text-white border-none rounded-xl shadow-lg p-6">
-                <CardHeader className="pb-4">
-                  <CardTitle className="text-xl font-semibold flex items-center text-news-wise-accent">
-                    <Download className="h-6 w-6 mr-3 text-news-wise-accent" /> 1. Download & Unpack
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-2">
+              <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6">
+                <div className="pb-4">
+                  <h3 className="text-xl font-semibold flex items-center text-news-wise-accent">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="h-6 w-6 mr-3 text-news-wise-accent"
+                    >
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                      <polyline points="7 10 12 15 17 10" />
+                      <line x1="12" x2="12" y1="15" y2="3" />
+                    </svg>{" "}
+                    1. Download & Unpack
+                  </h3>
+                </div>
+                <div className="space-y-2">
                   <p className="text-white">Download the News Wise repository as a ZIP file.</p>
                   <p className="text-white">
                     Extract the contents to a designated folder on your computer. Remember this folder&apos;s location!
                   </p>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
             </li>
             <li>
-              <Card className="bg-news-wise-card-blue text-white border-none rounded-xl shadow-lg p-6">
-                <CardHeader className="pb-4">
-                  <CardTitle className="text-xl font-semibold flex items-center text-news-wise-accent">
-                    <Chrome className="h-6 w-6 mr-3 text-news-wise-accent" /> 2. Open Chrome Extensions
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-2">
+              <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6">
+                <div className="pb-4">
+                  <h3 className="text-xl font-semibold flex items-center text-news-wise-accent">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="h-6 w-6 mr-3 text-news-wise-accent"
+                    >
+                      <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                    </svg>{" "}
+                    2. Open Chrome Extensions
+                  </h3>
+                </div>
+                <div className="space-y-2">
                   <p className="text-white">Open your Chrome browser.</p>
                   <p className="text-white">
                     Type <code className="bg-gray-700 px-2 py-1 rounded">chrome://extensions</code> into the address bar
@@ -196,52 +348,96 @@ export default function Home() {
                     Alternatively, click the three-dot menu in the top-right corner, go to &quot;More tools,&quot; and
                     then select &quot;Extensions.&quot;
                   </p>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
             </li>
             <li>
-              <Card className="bg-news-wise-card-blue text-white border-none rounded-xl shadow-lg p-6">
-                <CardHeader className="pb-4">
-                  <CardTitle className="text-xl font-semibold flex items-center text-news-wise-accent">
-                    <ToggleRight className="h-6 w-6 mr-3 text-news-wise-accent" /> 3. Enable Developer Mode
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-2">
+              <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6">
+                <div className="pb-4">
+                  <h3 className="text-xl font-semibold flex items-center text-news-wise-accent">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="h-6 w-6 mr-3 text-news-wise-accent"
+                    >
+                      <rect width="20" height="12" x="2" y="6" rx="6" ry="6" />
+                      <circle cx="16" cy="12" r="2" />
+                    </svg>{" "}
+                    3. Enable Developer Mode
+                  </h3>
+                </div>
+                <div className="space-y-2">
                   <p className="text-white">
                     In the top-right corner of the Extensions page, toggle on &quot;Developer mode.&quot;
                   </p>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
             </li>
             <li>
-              <Card className="bg-news-wise-card-blue text-white border-none rounded-xl shadow-lg p-6">
-                <CardHeader className="pb-4">
-                  <CardTitle className="text-xl font-semibold flex items-center text-news-wise-accent">
-                    <FolderOpen className="h-6 w-6 mr-3 text-news-wise-accent" /> 4. Load Unpacked
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-2">
+              <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6">
+                <div className="pb-4">
+                  <h3 className="text-xl font-semibold flex items-center text-news-wise-accent">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="h-6 w-6 mr-3 text-news-wise-accent"
+                    >
+                      <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z" />
+                    </svg>{" "}
+                    4. Load Unpacked
+                  </h3>
+                </div>
+                <div className="space-y-2">
                   <p className="text-white">
                     Click the &quot;Load unpacked&quot; button that appears after enabling Developer mode.
                   </p>
                   <p className="text-white">Navigate to and select the extracted News Wise extension folder.</p>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
             </li>
             <li>
-              <Card className="bg-news-wise-card-blue text-white border-none rounded-xl shadow-lg p-6">
-                <CardHeader className="pb-4">
-                  <CardTitle className="text-xl font-semibold flex items-center text-news-wise-accent">
-                    <Pin className="h-6 w-6 mr-3 text-news-wise-accent" /> 5. Pin Extension (Optional)
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-2">
+              <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6">
+                <div className="pb-4">
+                  <h3 className="text-xl font-semibold flex items-center text-news-wise-accent">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="h-6 w-6 mr-3 text-news-wise-accent"
+                    >
+                      <path d="M12 17V2l7 7-7 7Z" />
+                      <path d="M12 17H5a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-7Z" />
+                    </svg>{" "}
+                    5. Pin Extension (Optional)
+                  </h3>
+                </div>
+                <div className="space-y-2">
                   <p className="text-white">
                     Click the puzzle piece icon next to your profile avatar in the Chrome toolbar and pin the News Wise
                     icon for easy access.
                   </p>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
             </li>
           </ol>
         </div>
@@ -253,30 +449,112 @@ export default function Home() {
           <h2 className="text-3xl md:text-5xl font-bold text-center mb-12 text-news-wise-accent">How to Use</h2>
           <ol className="space-y-6 text-lg text-white">
             <li>
-              <Card className="bg-news-wise-card-blue text-white border-none rounded-xl shadow-lg p-6">
-                <CardHeader className="pb-4">
-                  <CardTitle className="text-xl font-semibold flex items-center text-news-wise-accent">
-                    <MousePointerClick className="h-6 w-6 mr-3 text-news-wise-accent" /> 1. Navigate to a News Article
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
+              <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6">
+                <div className="pb-4">
+                  <h3 className="text-xl font-semibold flex items-center text-news-wise-accent">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="h-6 w-6 mr-3 text-news-wise-accent"
+                    >
+                      <path d="M7 7h.01" />
+                      <path d="M10 12h.01" />
+                      <path d="M13 17h.01" />
+                      <path d="M16 20h.01" />
+                      <path d="M19 23h.01" />
+                      <path d="M4 4h.01" />
+                      <path d="M1 1h.01" />
+                      <path d="M23 23h.01" />
+                      <path d="M20 4h.01" />
+                      <path d="M17 1h.01" />
+                      <path d="M14 4h.01" />
+                      <path d="M11 1h.01" />
+                      <path d="M8 4h.01" />
+                      <path d="M5 1h.01" />
+                      <path d="M2 4h.01" />
+                      <path d="M23 1h.01" />
+                      <path d="M20 23h.01" />
+                      <path d="M17 20h.01" />
+                      <path d="M14 23h.01" />
+                      <path d="M11 20h.01" />
+                      <path d="M8 23h.01" />
+                      <path d="M5 20h.01" />
+                      <path d="M2 23h.01" />
+                      <path d="M23 20h.01" />
+                      <path d="M20 17h.01" />
+                      <path d="M17 23h.01" />
+                      <path d="M14 20h.01" />
+                      <path d="M11 23h.01" />
+                      <path d="M8 20h.01" />
+                      <path d="M5 23h.01" />
+                      <path d="M2 20h.01" />
+                      <path d="M23 17h.01" />
+                      <path d="M20 14h.01" />
+                      <path d="M17 17h.01" />
+                      <path d="M14 14h.01" />
+                      <path d="M11 17h.01" />
+                      <path d="M8 14h.01" />
+                      <path d="M5 17h.01" />
+                      <path d="M2 14h.01" />
+                      <path d="M23 11h.01" />
+                      <path d="M20 8h.01" />
+                      <path d="M17 11h.01" />
+                      <path d="M14 8h.01" />
+                      <path d="M11 11h.01" />
+                      <path d="M8 8h.01" />
+                      <path d="M5 11h.01" />
+                      <path d="M2 8h.01" />
+                      <path d="M23 5h.01" />
+                      <path d="M20 2h.01" />
+                      <path d="M17 5h.01" />
+                      <path d="M14 2h.01" />
+                      <path d="M11 5h.01" />
+                      <path d="M8 2h.01" />
+                      <path d="M5 5h.01" />
+                      <path d="M2 2h.01" />
+                    </svg>{" "}
+                    1. Navigate to a News Article
+                  </h3>
+                </div>
+                <div>
                   <p className="text-white">Open any news article in your Chrome browser.</p>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
             </li>
             <li>
-              <Card className="bg-news-wise-card-blue text-white border-none rounded-xl shadow-lg p-6">
-                <CardHeader className="pb-4">
-                  <CardTitle className="text-xl font-semibold flex items-center text-news-wise-accent">
-                    <Chrome className="h-6 w-6 mr-3 text-news-wise-accent" /> 2. Activate Extension
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
+              <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6">
+                <div className="pb-4">
+                  <h3 className="text-xl font-semibold flex items-center text-news-wise-accent">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="h-6 w-6 mr-3 text-news-wise-accent"
+                    >
+                      <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                    </svg>{" "}
+                    2. Activate Extension
+                  </h3>
+                </div>
+                <div>
                   <p className="text-white">
                     Click the News Wise extension icon in the extensions toolbar to activate the extension.
                   </p>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
             </li>
           </ol>
         </div>
@@ -288,5 +566,7 @@ export default function Home() {
           <p>&copy; {new Date().getFullYear()} News Wise. All rights reserved.</p>
         </div>
       </footer>
-    </div>)
+    </div>
+  )
+  )
 }
