@@ -44,7 +44,7 @@ export default function Home() {
         <div className="container mx-auto">
           <h2 className="text-3xl md:text-5xl font-bold text-center mb-12 text-news-wise-accent">Features</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-news-wise-card-blue rounded-xl shadow-lg p-6 flex flex-col items-center">
+            <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6 flex flex-col items-center">
               <div className="pb-4 text-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +70,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="bg-news-wise-card-blue rounded-xl shadow-lg p-6 flex flex-col items-center">
+            <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6 flex flex-col items-center">
               <div className="pb-4 text-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -98,7 +98,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="bg-news-wise-card-blue rounded-xl shadow-lg p-6 flex flex-col items-center">
+            <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6 flex flex-col items-center">
               <div className="pb-4 text-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -127,7 +127,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="bg-news-wise-card-blue rounded-xl shadow-lg p-6 flex flex-col items-center">
+            <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6 flex flex-col items-center">
               <div className="pb-4 text-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -165,7 +165,7 @@ export default function Home() {
             News Wise employs a multi-faceted approach to determine article authenticity:
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-news-wise-card-blue rounded-xl shadow-lg p-6">
+            <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6">
               <div className="pb-4">
                 <h3 className="text-xl font-semibold flex items-center text-news-wise-accent">
                   <svg
@@ -191,7 +191,7 @@ export default function Home() {
                 <p className="text-white">Evaluates the reputation and historical accuracy of the news source.</p>
               </div>
             </div>
-            <div className="bg-news-wise-card-blue rounded-xl shadow-lg p-6">
+            <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6">
               <div className="pb-4">
                 <h3 className="text-xl font-semibold flex items-center text-news-wise-accent">
                   <svg
@@ -222,7 +222,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="bg-news-wise-card-blue rounded-xl shadow-lg p-6">
+            <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6">
               <div className="pb-4">
                 <h3 className="text-xl font-semibold flex items-center text-news-wise-accent">
                   <svg
@@ -252,7 +252,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="bg-news-wise-card-blue rounded-xl shadow-lg p-6">
+            <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6">
               <div className="pb-4">
                 <h3 className="text-xl font-semibold flex items-center text-news-wise-accent">
                   <svg
@@ -296,7 +296,7 @@ export default function Home() {
           </p>
           <ol className="space-y-8 text-lg text-white">
             <li>
-              <div className="bg-news-wise-card-blue rounded-xl shadow-lg p-6">
+              <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6">
                 <div className="pb-4">
                   <h3 className="text-xl font-semibold flex items-center text-news-wise-accent">
                     <svg
@@ -327,7 +327,7 @@ export default function Home() {
               </div>
             </li>
             <li>
-              <div className="bg-news-wise-card-blue rounded-xl shadow-lg p-6">
+              <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6">
                 <div className="pb-4">
                   <h3 className="text-xl font-semibold flex items-center text-news-wise-accent">
                     <svg
@@ -361,7 +361,7 @@ export default function Home() {
               </div>
             </li>
             <li>
-              <div className="bg-news-wise-card-blue rounded-xl shadow-lg p-6">
+              <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6">
                 <div className="pb-4">
                   <h3 className="text-xl font-semibold flex items-center text-news-wise-accent">
                     <svg
@@ -390,7 +390,7 @@ export default function Home() {
               </div>
             </li>
             <li>
-              <div className="bg-news-wise-card-blue rounded-xl shadow-lg p-6">
+              <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6">
                 <div className="pb-4">
                   <h3 className="text-xl font-semibold flex items-center text-news-wise-accent">
                     <svg
@@ -419,7 +419,7 @@ export default function Home() {
               </div>
             </li>
             <li>
-              <div className="bg-news-wise-card-blue rounded-xl shadow-lg p-6">
+              <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6">
                 <div className="pb-4">
                   <h3 className="text-xl font-semibold flex items-center text-news-wise-accent">
                     <svg
@@ -458,7 +458,7 @@ export default function Home() {
           <h2 className="text-3xl md:text-5xl font-bold text-center mb-12 text-news-wise-accent">How to Use</h2>
           <ol className="space-y-6 text-lg text-white">
             <li>
-              <div className="bg-news-wise-card-blue rounded-xl shadow-lg p-6">
+              <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6">
                 <div className="pb-4">
                   <h3 className="text-xl font-semibold flex items-center text-news-wise-accent">
                     <svg
@@ -485,7 +485,7 @@ export default function Home() {
               </div>
             </li>
             <li>
-              <div className="bg-news-wise-card-blue rounded-xl shadow-lg p-6">
+              <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6">
                 <div className="pb-4">
                   <h3 className="text-xl font-semibold flex items-center text-news-wise-accent">
                     <svg
