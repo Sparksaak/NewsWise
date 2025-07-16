@@ -44,7 +44,7 @@ export default function Home() {
         <div className="container mx-auto">
           <h2 className="text-3xl md:text-5xl font-bold text-center mb-12 text-news-wise-accent">Features</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6 flex flex-col items-center">
+            <div className="bg-news-wise-card-blue rounded-xl shadow-lg p-6 flex flex-col items-center">
               <div className="pb-4 text-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -64,13 +64,13 @@ export default function Home() {
                 <h3 className="text-xl font-semibold text-news-wise-accent">Authenticity Scoring</h3>
               </div>
               <div className="text-center">
-                <p className="text-white">
+                <p className="text-news-wise-accent">
                   Get an immediate credibility score for any news article you are viewing, helping you quickly gauge its
                   trustworthiness.
                 </p>
               </div>
             </div>
-            <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6 flex flex-col items-center">
+            <div className="bg-news-wise-card-blue rounded-xl shadow-lg p-6 flex flex-col items-center">
               <div className="pb-4 text-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -92,13 +92,13 @@ export default function Home() {
                 <h3 className="text-xl font-semibold text-news-wise-accent">Reasoning Transparency</h3>
               </div>
               <div className="text-center">
-                <p className="text-white">
+                <p className="text-news-wise-accent">
                   Understand the factors that contribute to an article&apos;s authenticity score, including source
                   reputation, factual consistency, bias indicators, and more.
                 </p>
               </div>
             </div>
-            <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6 flex flex-col items-center">
+            <div className="bg-news-wise-card-blue rounded-xl shadow-lg p-6 flex flex-col items-center">
               <div className="pb-4 text-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -121,13 +121,13 @@ export default function Home() {
                 <h3 className="text-xl font-semibold text-news-wise-accent">Article Summarization</h3>
               </div>
               <div className="text-center">
-                <p className="text-white">
+                <p className="text-news-wise-accent">
                   Generate concise summaries of lengthy news articles, allowing you to grasp key information without
                   reading the full text.
                 </p>
               </div>
             </div>
-            <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6 flex flex-col items-center">
+            <div className="bg-news-wise-card-blue rounded-xl shadow-lg p-6 flex flex-col items-center">
               <div className="pb-4 text-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -148,7 +148,7 @@ export default function Home() {
                 <h3 className="text-xl font-semibold text-news-wise-accent">User-Friendly Interface</h3>
               </div>
               <div className="text-center">
-                <p className="text-white">
+                <p className="text-news-wise-accent">
                   Seamlessly integrated into your browsing experience with an intuitive and professional design.
                 </p>
               </div>
@@ -165,7 +165,7 @@ export default function Home() {
             News Wise employs a multi-faceted approach to determine article authenticity:
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6">
+            <div className="bg-news-wise-card-blue rounded-xl shadow-lg p-6">
               <div className="pb-4">
                 <h3 className="text-xl font-semibold flex items-center text-news-wise-accent">
                   <svg
@@ -188,10 +188,12 @@ export default function Home() {
                 </h3>
               </div>
               <div>
-                <p className="text-white">Evaluates the reputation and historical accuracy of the news source.</p>
+                <p className="text-news-wise-accent">
+                  Evaluates the reputation and historical accuracy of the news source.
+                </p>
               </div>
             </div>
-            <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6">
+            <div className="bg-news-wise-card-blue rounded-xl shadow-lg p-6">
               <div className="pb-4">
                 <h3 className="text-xl font-semibold flex items-center text-news-wise-accent">
                   <svg
@@ -216,13 +218,13 @@ export default function Home() {
                 </h3>
               </div>
               <div>
-                <p className="text-white">
+                <p className="text-news-wise-accent">
                   Examines the article for common indicators of misinformation, such as sensational language, logical
                   fallacies, and unsupported claims.
                 </p>
               </div>
             </div>
-            <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6">
+            <div className="bg-news-wise-card-blue rounded-xl shadow-lg p-6">
               <div className="pb-4">
                 <h3 className="text-xl font-semibold flex items-center text-news-wise-accent">
                   <svg
@@ -246,13 +248,13 @@ export default function Home() {
                 </h3>
               </div>
               <div>
-                <p className="text-white">
+                <p className="text-news-wise-accent">
                   Compares information presented in the article with other reputable sources to identify discrepancies
                   or corroborating evidence.
                 </p>
               </div>
             </div>
-            <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6">
+            <div className="bg-news-wise-card-blue rounded-xl shadow-lg p-6">
               <div className="pb-4">
                 <h3 className="text-xl font-semibold flex items-center text-news-wise-accent">
                   <svg
@@ -275,7 +277,9 @@ export default function Home() {
                 </h3>
               </div>
               <div>
-                <p className="text-white">Identifies potential ideological or political biases within the content.</p>
+                <p className="text-news-wise-accent">
+                  Identifies potential ideological or political biases within the content.
+                </p>
               </div>
             </div>
           </div>
@@ -296,7 +300,7 @@ export default function Home() {
           </p>
           <ol className="space-y-8 text-lg text-white">
             <li>
-              <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6">
+              <div className="bg-news-wise-card-blue rounded-xl shadow-lg p-6">
                 <div className="pb-4">
                   <h3 className="text-xl font-semibold flex items-center text-news-wise-accent">
                     <svg
@@ -319,15 +323,15 @@ export default function Home() {
                   </h3>
                 </div>
                 <div className="space-y-2">
-                  <p className="text-white">Download the News Wise repository as a ZIP file.</p>
-                  <p className="text-white">
+                  <p className="text-news-wise-accent">Download the News Wise repository as a ZIP file.</p>
+                  <p className="text-news-wise-accent">
                     Extract the contents to a designated folder on your computer. Remember this folder&apos;s location!
                   </p>
                 </div>
               </div>
             </li>
             <li>
-              <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6">
+              <div className="bg-news-wise-card-blue rounded-xl shadow-lg p-6">
                 <div className="pb-4">
                   <h3 className="text-xl font-semibold flex items-center text-news-wise-accent">
                     <svg
@@ -348,12 +352,12 @@ export default function Home() {
                   </h3>
                 </div>
                 <div className="space-y-2">
-                  <p className="text-white">Open your Chrome browser.</p>
-                  <p className="text-white">
+                  <p className="text-news-wise-accent">Open your Chrome browser.</p>
+                  <p className="text-news-wise-accent">
                     Type <code className="bg-gray-700 px-2 py-1 rounded">chrome://extensions</code> into the address bar
                     and press Enter.
                   </p>
-                  <p className="text-white">
+                  <p className="text-news-wise-accent">
                     Alternatively, click the three-dot menu in the top-right corner, go to &quot;More tools,&quot; and
                     then select &quot;Extensions.&quot;
                   </p>
@@ -361,7 +365,7 @@ export default function Home() {
               </div>
             </li>
             <li>
-              <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6">
+              <div className="bg-news-wise-card-blue rounded-xl shadow-lg p-6">
                 <div className="pb-4">
                   <h3 className="text-xl font-semibold flex items-center text-news-wise-accent">
                     <svg
@@ -383,14 +387,14 @@ export default function Home() {
                   </h3>
                 </div>
                 <div className="space-y-2">
-                  <p className="text-white">
+                  <p className="text-news-wise-accent">
                     In the top-right corner of the Extensions page, toggle on &quot;Developer mode.&quot;
                   </p>
                 </div>
               </div>
             </li>
             <li>
-              <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6">
+              <div className="bg-news-wise-card-blue rounded-xl shadow-lg p-6">
                 <div className="pb-4">
                   <h3 className="text-xl font-semibold flex items-center text-news-wise-accent">
                     <svg
@@ -411,15 +415,17 @@ export default function Home() {
                   </h3>
                 </div>
                 <div className="space-y-2">
-                  <p className="text-white">
+                  <p className="text-news-wise-accent">
                     Click the &quot;Load unpacked&quot; button that appears after enabling Developer mode.
                   </p>
-                  <p className="text-white">Navigate to and select the extracted News Wise extension folder.</p>
+                  <p className="text-news-wise-accent">
+                    Navigate to and select the extracted News Wise extension folder.
+                  </p>
                 </div>
               </div>
             </li>
             <li>
-              <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6">
+              <div className="bg-news-wise-card-blue rounded-xl shadow-lg p-6">
                 <div className="pb-4">
                   <h3 className="text-xl font-semibold flex items-center text-news-wise-accent">
                     <svg
@@ -441,7 +447,7 @@ export default function Home() {
                   </h3>
                 </div>
                 <div className="space-y-2">
-                  <p className="text-white">
+                  <p className="text-news-wise-accent">
                     Click the puzzle piece icon next to your profile avatar in the Chrome toolbar and pin the News Wise
                     icon for easy access.
                   </p>
@@ -458,7 +464,7 @@ export default function Home() {
           <h2 className="text-3xl md:text-5xl font-bold text-center mb-12 text-news-wise-accent">How to Use</h2>
           <ol className="space-y-6 text-lg text-white">
             <li>
-              <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6">
+              <div className="bg-news-wise-card-blue rounded-xl shadow-lg p-6">
                 <div className="pb-4">
                   <h3 className="text-xl font-semibold flex items-center text-news-wise-accent">
                     <svg
@@ -480,12 +486,12 @@ export default function Home() {
                   </h3>
                 </div>
                 <div>
-                  <p className="text-white">Open any news article in your Chrome browser.</p>
+                  <p className="text-news-wise-accent">Open any news article in your Chrome browser.</p>
                 </div>
               </div>
             </li>
             <li>
-              <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6">
+              <div className="bg-news-wise-card-blue rounded-xl shadow-lg p-6">
                 <div className="pb-4">
                   <h3 className="text-xl font-semibold flex items-center text-news-wise-accent">
                     <svg
@@ -507,7 +513,7 @@ export default function Home() {
                   </h3>
                 </div>
                 <div>
-                  <p className="text-white">
+                  <p className="text-news-wise-accent">
                     Click the News Wise extension icon in the extensions toolbar to activate the extension.
                   </p>
                 </div>
