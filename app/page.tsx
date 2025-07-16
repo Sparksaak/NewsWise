@@ -29,9 +29,9 @@ export default function Home() {
                 strokeLinejoin="round"
                 className="mr-2 h-5 w-5"
               >
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                <polyline points="7 10 12 15 17 10" />
-                <line x1="12" x2="12" y1="15" y2="3" />
+                <path d="M12 17V3" />
+                <path d="m6 11 6 6 6-6" />
+                <path d="M19 21H5" />
               </svg>{" "}
               Download Extension
             </button>
@@ -84,9 +84,10 @@ export default function Home() {
                   strokeLinejoin="round"
                   className="h-12 w-12 text-news-wise-accent mb-4 mx-auto"
                 >
-                  <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1.3.5 2.5 1.5 3.5.8.7 1.3 1.5 1.5 2.5" />
-                  <path d="M9 18h6" />
-                  <path d="M10 22h4" />
+                  <circle cx="11" cy="11" r="8" />
+                  <path d="m21 21-4.3-4.3" />
+                  <path d="M10 10h.01" />
+                  <path d="M14 14h.01" />
                 </svg>
                 <h3 className="text-xl font-semibold text-news-wise-accent">Reasoning Transparency</h3>
               </div>
@@ -113,9 +114,9 @@ export default function Home() {
                 >
                   <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
                   <polyline points="14 2 14 8 20 8" />
-                  <line x1="16" x2="8" y1="13" y2="13" />
-                  <line x1="16" x2="8" y1="17" y2="17" />
-                  <line x1="10" x2="8" y1="9" y2="9" />
+                  <line x1="8" x2="16" y1="13" y2="13" />
+                  <line x1="8" x2="16" y1="17" y2="17" />
+                  <line x1="8" x2="12" y1="9" y2="9" />
                 </svg>
                 <h3 className="text-xl font-semibold text-news-wise-accent">Article Summarization</h3>
               </div>
@@ -142,6 +143,7 @@ export default function Home() {
                 >
                   <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
                   <circle cx="12" cy="7" r="4" />
+                  <path d="M2 22h20" />
                 </svg>
                 <h3 className="text-xl font-semibold text-news-wise-accent">User-Friendly Interface</h3>
               </div>
@@ -165,22 +167,25 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6">
               <div className="pb-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="h-10 w-10 text-news-wise-accent mb-3"
-                >
-                  <circle cx="11" cy="11" r="8" />
-                  <path d="m21 21-4.3-4.3" />
-                </svg>
-                <h3 className="text-xl font-semibold text-news-wise-accent">Source Analysis</h3>
+                <h3 className="text-xl font-semibold flex items-center text-news-wise-accent">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="h-10 w-10 text-news-wise-accent mb-3"
+                  >
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="m21 21-4.3-4.3" />
+                    <path d="M10 10h.01" />
+                  </svg>{" "}
+                  Source Analysis
+                </h3>
               </div>
               <div>
                 <p className="text-white">Evaluates the reputation and historical accuracy of the news source.</p>
@@ -188,25 +193,27 @@ export default function Home() {
             </div>
             <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6">
               <div className="pb-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="h-10 w-10 text-news-wise-accent mb-3"
-                >
-                  <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
-                  <path d="M9 3v18" />
-                  <path d="M15 3v18" />
-                  <path d="M3 9h18" />
-                  <path d="M3 15h18" />
-                </svg>
-                <h3 className="text-xl font-semibold text-news-wise-accent">Content Analysis</h3>
+                <h3 className="text-xl font-semibold flex items-center text-news-wise-accent">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="h-10 w-10 text-news-wise-accent mb-3"
+                  >
+                    <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
+                    <polyline points="14 2 14 8 20 8" />
+                    <line x1="8" x2="16" y1="13" y2="13" />
+                    <line x1="8" x2="16" y1="17" y2="17" />
+                    <line x1="8" x2="12" y1="9" y2="9" />
+                  </svg>{" "}
+                  Content Analysis
+                </h3>
               </div>
               <div>
                 <p className="text-white">
@@ -217,28 +224,26 @@ export default function Home() {
             </div>
             <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6">
               <div className="pb-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="h-10 w-10 text-news-wise-accent mb-3"
-                >
-                  <path d="M12 12c-2.8 0-5 2.2-5 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5Z" />
-                  <path d="M18 12h.01" />
-                  <path d="M6 12h.01" />
-                  <path d="M12 6v.01" />
-                  <path d="M12 18v.01" />
-                  <path d="M12 2v.01" />
-                  <path d="M22 12h.01" />
-                  <path d="M2 12h.01" />
-                </svg>
-                <h3 className="text-xl font-semibold text-news-wise-accent">Cross-Referencing</h3>
+                <h3 className="text-xl font-semibold flex items-center text-news-wise-accent">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="h-10 w-10 text-news-wise-accent mb-3"
+                  >
+                    <path d="M17 17H7V7h10v10Z" />
+                    <path d="M19 19H5V5h14v14Z" />
+                    <path d="M10 10h.01" />
+                    <path d="M14 14h.01" />
+                  </svg>{" "}
+                  Cross-Referencing
+                </h3>
               </div>
               <div>
                 <p className="text-white">
@@ -249,21 +254,25 @@ export default function Home() {
             </div>
             <div className="bg-news-wise-card-blue text-white rounded-xl shadow-lg p-6">
               <div className="pb-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="h-10 w-10 text-news-wise-accent mb-3"
-                >
-                  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z" />
-                </svg>
-                <h3 className="text-xl font-semibold text-news-wise-accent">Bias Detection</h3>
+                <h3 className="text-xl font-semibold flex items-center text-news-wise-accent">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="h-10 w-10 text-news-wise-accent mb-3"
+                  >
+                    <path d="M12 2c-2.8 0-5 2.2-5 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5Z" />
+                    <path d="M12 12v10" />
+                    <path d="M17 17l-5 5-5-5" />
+                  </svg>{" "}
+                  Bias Detection
+                </h3>
               </div>
               <div>
                 <p className="text-white">Identifies potential ideological or political biases within the content.</p>
@@ -302,9 +311,9 @@ export default function Home() {
                       strokeLinejoin="round"
                       className="h-6 w-6 mr-3 text-news-wise-accent"
                     >
-                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                      <polyline points="7 10 12 15 17 10" />
-                      <line x1="12" x2="12" y1="15" y2="3" />
+                      <path d="M12 17V3" />
+                      <path d="m6 11 6 6 6-6" />
+                      <path d="M19 21H5" />
                     </svg>{" "}
                     1. Download & Unpack
                   </h3>
@@ -464,61 +473,8 @@ export default function Home() {
                       strokeLinejoin="round"
                       className="h-6 w-6 mr-3 text-news-wise-accent"
                     >
-                      <path d="M7 7h.01" />
-                      <path d="M10 12h.01" />
-                      <path d="M13 17h.01" />
-                      <path d="M16 20h.01" />
-                      <path d="M19 23h.01" />
-                      <path d="M4 4h.01" />
-                      <path d="M1 1h.01" />
-                      <path d="M23 23h.01" />
-                      <path d="M20 4h.01" />
-                      <path d="M17 1h.01" />
-                      <path d="M14 4h.01" />
-                      <path d="M11 1h.01" />
-                      <path d="M8 4h.01" />
-                      <path d="M5 1h.01" />
-                      <path d="M2 4h.01" />
-                      <path d="M23 1h.01" />
-                      <path d="M20 23h.01" />
-                      <path d="M17 20h.01" />
-                      <path d="M14 23h.01" />
-                      <path d="M11 20h.01" />
-                      <path d="M8 23h.01" />
-                      <path d="M5 20h.01" />
-                      <path d="M2 23h.01" />
-                      <path d="M23 20h.01" />
-                      <path d="M20 17h.01" />
-                      <path d="M17 23h.01" />
-                      <path d="M14 20h.01" />
-                      <path d="M11 23h.01" />
-                      <path d="M8 20h.01" />
-                      <path d="M5 23h.01" />
-                      <path d="M2 20h.01" />
-                      <path d="M23 17h.01" />
-                      <path d="M20 14h.01" />
-                      <path d="M17 17h.01" />
-                      <path d="M14 14h.01" />
-                      <path d="M11 17h.01" />
-                      <path d="M8 14h.01" />
-                      <path d="M5 17h.01" />
-                      <path d="M2 14h.01" />
-                      <path d="M23 11h.01" />
-                      <path d="M20 8h.01" />
-                      <path d="M17 11h.01" />
-                      <path d="M14 8h.01" />
-                      <path d="M11 11h.01" />
-                      <path d="M8 8h.01" />
-                      <path d="M5 11h.01" />
-                      <path d="M2 8h.01" />
-                      <path d="M23 5h.01" />
-                      <path d="M20 2h.01" />
-                      <path d="M17 5h.01" />
-                      <path d="M14 2h.01" />
-                      <path d="M11 5h.01" />
-                      <path d="M8 2h.01" />
-                      <path d="M5 5h.01" />
-                      <path d="M2 2h.01" />
+                      <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z" />
+                      <path d="M12 6v6l4 2" />
                     </svg>{" "}
                     1. Navigate to a News Article
                   </h3>
@@ -544,7 +500,8 @@ export default function Home() {
                       strokeLinejoin="round"
                       className="h-6 w-6 mr-3 text-news-wise-accent"
                     >
-                      <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                      <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z" />
+                      <path d="M12 6v6l4 2" />
                     </svg>{" "}
                     2. Activate Extension
                   </h3>
@@ -567,6 +524,5 @@ export default function Home() {
         </div>
       </footer>
     </div>
-  )
   )
 }
