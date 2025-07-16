@@ -53,11 +53,11 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Custom News Wise colors
-        "news-wise-blue-start": "hsl(235, 97%, 74%)", // Corresponds to #7B8FFC
-        "news-wise-purple-end": "hsl(270, 50%, 39%)", // Corresponds to #6A2E9A
-        "news-wise-card-light-blue": "hsl(200, 80%, 90%)", // A light sky blue for cards
-        "news-wise-accent": "hsl(39, 100%, 50%)", // Orange/Amber
+        // Custom News Wise colors - hardcoded for Next.js compatibility
+        "news-wise-blue-start": "#7B8FFC", // Corresponds to hsl(235, 97%, 74%)
+        "news-wise-purple-end": "#6A2E9A", // Corresponds to hsl(270, 50%, 39%)
+        "news-wise-card-blue": "#CDEBFA", // A light sky blue for cards, corresponds to hsl(200, 80%, 90%)
+        "news-wise-accent": "#FF9900", // Orange/Amber, corresponds to hsl(39, 100%, 50%)
       },
       borderRadius: {
         lg: "var(--radius)",
