@@ -9,6 +9,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        "news-wise-blue-start": "#7B8FFC",
+        "news-wise-purple-end": "#6A2E9A",
+        "news-wise-card-blue": "#CDEBFA",
+        "news-wise-accent": "#FF9900",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -44,11 +48,11 @@ module.exports = {
         },
       },
       borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+        lg: "0.5rem",
+        md: "calc(0.5rem - 2px)",
+        sm: "calc(0.5rem - 4px)",
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 }
