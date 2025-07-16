@@ -405,7 +405,7 @@ export default function Home() {
                       strokeLinejoin="round"
                       className="h-6 w-6 mr-3 text-news-wise-accent"
                     >
-                      <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z" />
+                      <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2 0 0 1-2.5-2.5Z" />
                     </svg>{" "}
                     4. Load Unpacked
                   </h3>
