@@ -6,17 +6,17 @@ News Wise is a sophisticated Chrome extension designed to empower users with the
 Table of Contents
 -----------------
 
-*   Features
+*   [Features](https://github.com/Sparksaak/NewsWise/edit/main/README.md#features)
     
-*   How It Works
+*   [How It Works](https://github.com/Sparksaak/NewsWise/edit/main/README.md#how-it-works)
     
-*   Installation
+*   [Installation](https://github.com/Sparksaak/NewsWise/edit/main/README.md#installation)
     
-*   Usage
+*   [Usage](https://github.com/Sparksaak/NewsWise/edit/main/README.md#usage)
     
-*   Contributing
+*   [Contributing](https://github.com/Sparksaak/NewsWise/edit/main/README.md#contributing)
     
-*   License
+*   [License](https://github.com/Sparksaak/NewsWise/edit/main/README.md#license)
     
 
 Features
