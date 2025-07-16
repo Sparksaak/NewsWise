@@ -70,7 +70,8 @@
   * {
     @apply border-border;
   }
-  body {
+  /* Removed default body background and text to allow page.tsx to control it */
+  /* body {
     @apply bg-background text-foreground;
-  }
+  } */
 }
