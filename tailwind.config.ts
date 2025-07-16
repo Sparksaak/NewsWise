@@ -3,7 +3,7 @@ import defaultConfig from "shadcn/ui/tailwind.config"
 
 const config = {
   ...defaultConfig,
-  content: [...defaultConfig.content, "./app/**/*.{js,ts,jsx,tsx,mdx}"],
+  content: [...defaultConfig.content, "./pages/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}", "*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     ...defaultConfig.theme,
     container: {
@@ -14,14 +14,19 @@ const config = {
       },
     },
     extend: {
-      ...defaultConfig.theme.extend,
+      ...defaultConfig.theme.extend.colors,
       colors: {
-        ...defaultConfig.theme.extend.colors,
         // Custom News Wise colors - hardcoded for Next.js compatibility
         "news-wise-blue-start": "#7B8FFC", // Corresponds to hsl(235, 97%, 74%)
         "news-wise-purple-end": "#6A2E9A", // Corresponds to hsl(270, 50%, 39%)
         "news-wise-card-blue": "#CDEBFA", // A light sky blue for cards, corresponds to hsl(200, 80%, 90%)
         "news-wise-accent": "#FF9900", // Orange/Amber, corresponds to hsl(39, 100%, 50%)
+      },
+      borderRadius: {
+        ...defaultConfig.theme.extend.borderRadius,
+        lg: "0.5rem", // Default shadcn radius
+        md: "calc(0.5rem - 2px)",
+        sm: "calc(0.5rem - 4px)",
       },
       keyframes: {
         "accordion-down": {
